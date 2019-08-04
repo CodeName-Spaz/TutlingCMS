@@ -1,3 +1,137 @@
 page-home {
+    ion-content {
+        overflow: hidden
+    }
 
+    .scroll-content {
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .appContainer{
+        width: 100%;
+        height: 100%;
+        max-width: 600px;
+        max-height: 800px;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .everything-inside {
+        width     : 100%;
+        height    : calc(100% - 50px);
+        background: rgb(197, 197, 197);
+        margin-top: 50px;
+        z-index   : 0;
+        overflow-y: scroll;
+    }
+
+    .nav {
+        position  : absolute;
+        top       : 0;
+        height    : 50px;
+        width     : 100%;
+        background: rgb(74,73,74);
+        z-index   : 10000;
+        box-shadow: 0 0 10px black;
+        display: flex;
+    }
+    .nav > div:nth-child(1){
+        width: 40px;
+        height: 40px;
+        border-radius: 50px;
+        border: 1px solid rgb(255, 196, 0);
+        margin-top: 5px;
+        margin-left: 10px;
+        overflow: hidden;
+        img{
+            height: 100%;
+            width: 100%;
+            transition: 200ms;
+            object-fit: cover;
+        }
+        img:active{
+            filter: brightness(50%)
+        }
+    }
+    .nav > div:nth-child(2){
+        width: calc(100% - 100px)
+    }
+    .nav > div:nth-child(3){
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 2em;
+        color: rgb(255, 196, 0);
+        border-radius: 50px;
+        border: 1px solid rgb(255, 196, 0);
+        margin-top: 5px;
+    }
+
+    .item {
+        width        : 100%;
+        height       : 80px;
+        background   : white;
+        margin-bottom: 10px;
+        position     : relative;
+        border-radius: 5px;
+        box-shadow   : 0 0 10px rgba(0, 0, 0, 0.404);
+    }
+
+    .detail {
+        width     : 100%;
+        height    : 100%;
+        background: green;
+        display   : flex;
+    }
+
+    .detail>div:nth-child(1) {
+        width     : 80px;
+        height    : 80px;
+        background: white;
+        padding   : 5px;
+    }
+
+    .detail>div:nth-child(2) {
+        width             : calc(100% - 80px);
+        height            : 80px;
+        background        : white;
+        padding           : 5px;
+        position          : relative;
+        // display        : flex;
+        // flex-direction : column;
+        // justify-content: center;
+        // border         : 1px solid black;
+    }
+
+    #userImg {
+        width        : 100%;
+        height       : 100%;
+        object-fit   : cover;
+        border-radius: 5px;
+    }
+
+    #name {
+        font-size  : 1em;
+        font-weight: bold;
+    }
+
+    #position {
+        font-size: 10px;
+        color    : grey;
+        position : absolute;
+        right    : 5px;
+        top      : -10px;
+    }
+
+    #education {
+        font-size: 10px;
+        color    : grey;
+    }
 }
