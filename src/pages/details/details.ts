@@ -15,11 +15,30 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetailsPage {
 
+  personType = "Student";
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetailsPage');
+  }
+
+  togglePerson() {
+    if (this.personType == "Student") {
+      this.personType = "Tutor"
+    }
+    else {
+      this.personType = "Student"
+    }
+  }
+  popPage() {
+    this.navCtrl.pop()
+  }
+  approve() {
+    this.popPage()
+  }
+  decline() {
+    this.popPage()
   }
 
 }

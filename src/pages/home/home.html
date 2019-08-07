@@ -2,16 +2,17 @@
   <div class="appContainer">
 
     <div class="nav">
-      <div>
+      <div (click)="reload()">
         <img src="../../assets/icon/icon2.JPG" alt="">
       </div>
       <div></div>
-      <div>
-        <ion-icon name="person"></ion-icon>
+      <div (click)="logOut()">
+        <!-- <ion-icon name="person"></ion-icon> -->
+        Logout
       </div>
     </div>
     <div class="everything-inside" padding>
-      <div class="item">
+      <div class="item" (click)="showDetails()">
         <div class="detail">
           <div>
             <img id="userImg" src="../../assets/imgs/1.jpg" alt="">

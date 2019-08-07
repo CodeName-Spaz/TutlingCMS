@@ -1,15 +1,62 @@
-<!--
-  Generated template for the DetailsPage page.
+<ion-content>
+  <div class="appContainer">
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-  <ion-navbar>
-    <ion-title>Details</ion-title>
-  </ion-navbar>
-</ion-header>
+    <div class="nav">
+      <div (click)="popPage()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </div>
+      <div>
+        <h4>John Doe</h4>
+      </div>
+      <div>
+        <!-- <ion-icon name="school"></ion-icon> -->
+        {{personType}}
+      </div>
+    </div>
+    <div class="everything-inside" padding>
 
-<ion-content padding>
 
+      <div class="Detail" id="one">
+        <p id="subhead">Full Name</p>
+        <p id="detail-inner">John Doe</p>
+      </div>
+      <div class="Detail" id="two">
+        <p id="subhead">Email</p>
+        <p id="detail-inner">johndoe@tutling.com</p>
+      </div>
+      <div class="Detail" id="three">
+        <p id="subhead">Date of Birth</p>
+        <p id="detail-inner">1995 March 30</p>
+      </div>
+      <div class="Detail" id="four">
+        <p id="subhead">Identity Number</p>
+        <p id="detail-inner">950330 6276 082</p>
+      </div>
+      <div class="Detail" id="five">
+        <p id="subhead">Mobile</p>
+        <p id="detail-inner">0813917112</p>
+      </div>
+      <div class="Detail" id="six">
+        <p id="subhead">University/College</p>
+        <p id="detail-inner">University of Johannesburg</p>
+      </div>
+      <div class="Detail" id="seven">
+        <p id="subhead">High School</p>
+        <p id="detail-inner">Tholimfundo Secondary School</p>
+      </div>
+      <div class="Detail" id="eight">
+        <p id="subhead">Primary School</p>
+        <p id="detail-inner">Tetelo Primary School</p>
+      </div>
+      <div class="Detail" id="nine">
+        <p id="subhead">Education Level</p>
+        <p id="detail-inner">BTech</p>
+      </div>
+
+    </div>
+    <div class="feet">
+      <button ion-button color="danger" (click)="decline()">Decline</button><button ion-button color="approved"
+        (click)="approve()">Approve</button>
+    </div>
+  </div>
 </ion-content>
