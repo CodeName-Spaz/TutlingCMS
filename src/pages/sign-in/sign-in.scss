@@ -4,12 +4,12 @@ page-sign-in {
     }
 
     .scroll-content {
-        overflow       : hidden;
-        display        : flex;
-        flex-direction : column;
-        justify-content: center;
-        background: url(../../assets/imgs/bg.jpg);
-        background-size: cover;
+        overflow         : hidden;
+        display          : flex;
+        flex-direction   : column;
+        justify-content  : center;
+        background       : url(../../assets/imgs/bg.jpg);
+        background-size  : cover;
         background-repeat: no-repeat;
     }
 
@@ -26,12 +26,13 @@ page-sign-in {
         flex-direction : column;
         justify-content: center;
         animation      : 700ms fadeIn;
-        border-radius: 15px;
-        box-shadow: 0 0 10px black;
-        border: 1px solid rgba(179, 179, 179, 0.301);
+        border-radius  : 15px;
+        box-shadow     : 0 0 10px black;
+        border         : 1px solid rgba(179, 179, 179, 0.301);
     }
-    @media screen and (max-width: 800px){
-        .appContainer{
+
+    @media screen and (max-width: 800px) {
+        .appContainer {
             border-radius: 0;
         }
     }
@@ -41,7 +42,7 @@ page-sign-in {
         // height    : 20%;
         z-index      : 0;
         text-align   : center;
-        
+
         animation: 700ms zoomIn;
     }
 
@@ -49,19 +50,21 @@ page-sign-in {
         background   : white;
         margin       : 15px auto;
         border-radius: 10px;
+        padding      : 5px;
         box-shadow   : 0 0 10px rgba(0, 0, 0, 0.568);
         width        : 90%;
     }
 
     button {
-        height       : 40px;
-        margin-top   : 10px !important;
-        margin-left  : 0px !important;
-        margin-right : 0px !important;
-        width        : 50%;
-        box-shadow   : 0 0 10px rgba(0, 0, 0, 0.568);
-        border-radius: 10px !important;
-        background   : rgb(255, 196, 0) !important;
+        height        : 40px;
+        margin-top    : 10px !important;
+        margin-left   : 0px !important;
+        margin-right  : 0px !important;
+        width         : 50%;
+        box-shadow    : 0 0 10px rgba(0, 0, 0, 0.568);
+        border-radius : 10px !important;
+        background    : rgb(255, 196, 0) !important;
+        text-transform: uppercase;
     }
 
     .image {
