@@ -12,27 +12,15 @@
       </div>
     </div>
     <div class="everything-inside" padding>
-        <div class="item" (click)="showDetails()">
+        <div class="item" *ngFor="let i of tutors" (click)="showDetails()">
           <div class="detail">
             <div>
-              <img id="userImg" src="../../assets/imgs/tut.svg" alt="">
+              <img id="userImg" src="{{i.downloadurl}}" alt="">
             </div>
             <div>
-              <p id="name">Sithembiso Leonard Luvuno jkhfdsjkghfd ifdhkgsdjo</p>
-              <p id="education">BTech</p>
-              <p id="position">Tutor</p>
-            </div>
-          </div>
-        </div>
-        <div class="item" (click)="showDetails()">
-          <div class="detail">
-            <div>
-              <img id="userImg" src="../../assets/imgs/stu.svg" alt="">
-            </div>
-            <div>
-              <p id="name">Sithembiso Leonard Luvuno jkhfdsjkghfd ifdhkgsdjo</p>
-              <p id="education">BTech</p>
-              <p id="position">Student</p>
+              <p id="name">{{i.name}}</p>
+              <p id="education">{{i.eduLevel}}</p>
+              <p id="position">{{i.university}}</p>
             </div>
           </div>
         </div>
