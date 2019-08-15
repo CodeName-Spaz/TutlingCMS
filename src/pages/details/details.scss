@@ -5,12 +5,13 @@ page-details {
     }
 
     .scroll-content {
-        overflow       : hidden;
-        display        : flex;
-        flex-direction : column;
-        justify-content: center;
-        background: url(../../assets/imgs/bg.jpg);
-        background-size: cover;
+        overflow         : hidden;
+        display          : flex;
+        flex-direction   : column;
+        justify-content  : center;
+        background       : url(../../assets/imgs/bg.jpg);
+        background-position: center;
+        background-size  : cover;
         background-repeat: no-repeat;
     }
 

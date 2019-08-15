@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { DetailsPage } from '../details/details';
 import { SignInPage } from '../sign-in/sign-in';
+import { StatsPage } from '../stats/stats';
 
 @Component({
   selector: 'page-home',
@@ -23,5 +24,8 @@ export class HomePage {
 
   logOut(){
     this.navCtrl.setRoot(SignInPage)
+  }
+  showCharts(){
+    this.navCtrl.push(StatsPage)
   }
 }

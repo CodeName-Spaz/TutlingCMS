@@ -1,0 +1,269 @@
+page-stats {
+
+    .scroll-content {
+        overflow           : hidden;
+        display            : flex;
+        flex-direction     : column;
+        justify-content    : center;
+        background         : url(../../assets/imgs/bg.jpg);
+        background-position: center;
+        background-size    : cover;
+        background-repeat  : no-repeat;
+    }
+
+    ion-fab {
+        display: none
+    }
+
+    button {
+        width     : 350px;
+        text-align: center;
+        margin    : 10px auto !important
+    }
+
+    .big-screen {
+        width        : 90%;
+        height       : 95%;
+        background   : whitesmoke;
+        margin       : 0 auto;
+        border-radius: 15px;
+        transition   : 300ms;
+        box-shadow   : 0 0 15px black;
+        animation    : 700ms fadeIn;
+    }
+
+    .titler {
+        width : 100%;
+        height: 40px;
+    }
+
+    .titler h1 {
+        font-size : 30px;
+        text-align: center;
+    }
+
+    .body-content {
+        width          : 100%;
+        height         : calc(100% - 80px);
+        overflow-y     : scroll;
+        margin-top     : 30px;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+    }
+
+    ::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+        border-radius     : 10px !important;
+        background-color  : #F5F5F5 !important;
+    }
+
+    ::-webkit-scrollbar {
+        width           : 5px !important;
+        background-color: #F5F5F5 !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        border-radius     : 10px !important;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3) !important;
+        background-color  : rgb(255, 196, 0) !important;
+    }
+
+    .numbers {
+        width     : 100%;
+        height    : 50%;
+        margin-top: 20px;
+        display   : flex;
+        margin    : 0 auto;
+        // border : 2px solid
+    }
+
+    .numbers>div {
+        width        : 50%;
+        height       : 100%;
+        margin       : 10px;
+        background   : white;
+        border-radius: 15px;
+        box-shadow   : 0 0 10px rgba(0, 0, 0, 0.459);
+    }
+
+    .numbers>div h3 {
+        text-align: center;
+        font-size : 20px;
+        height    : 30px;
+        margin    : 0;
+    }
+
+    .chart {
+        width     : 100%;
+        height    : calc(100% - 30px);
+        background: whitesmoke;
+    }
+
+    .misc {
+        width        : 100%;
+        height       : 30%;
+        margin-top   : 20px;
+        display      : flex;
+        margin       : 0 auto;
+        // background: red;
+        margin-top   : 30px
+    }
+
+    .misc div {
+        width        : 50%;
+        height       : 150px;
+        line-height  : 150px;
+        font-size    : 20px;
+        text-align   : center;
+        margin       : 10px;
+        background   : white;
+        border-radius: 15px;
+        box-shadow   : 0 0 10px rgba(0, 0, 0, 0.459);
+        transition   : 300ms;
+
+        ion-icon {
+            font-size : 50px !important;
+            padding   : 5px;
+            transition: 300ms;
+        }
+
+    }
+
+    @media screen and (max-width: 1094px) {
+
+        .misc div {
+            width        : 50%;
+            height       : 150px;
+            line-height  : 150px;
+            font-size    : 10px;
+            text-align   : center;
+            margin       : 10px;
+            background   : white;
+            border-radius: 15px;
+            box-shadow   : 0 0 10px rgba(0, 0, 0, 0.459);
+
+            ion-icon {
+                font-size: 40px !important;
+                padding  : 5px;
+            }
+
+        }
+    }
+
+    #active {
+        color: green;
+    }
+
+    #total {
+        color: grey;
+    }
+
+    .small-screen {
+        display: none;
+    }
+
+    @media screen and (max-width: 789px) {
+        .big-screen {
+            display: none;
+        }
+
+        
+
+        p{
+            font-size: 20px;
+            text-align: center;
+            line-height: 10px;
+        }
+        .small-screen {
+            display   : block;
+            width     : 100%;
+            height    : 100%;
+            background: whitesmoke;
+        }
+
+        .navBar {
+            height     : 40px;
+            width      : 100%;
+            line-height: 40px;
+            margin     : 0;
+            background : rgb(75, 75, 75);
+            display    : flex;
+            color      : white;
+
+        }
+            #back-button{
+                position: absolute;
+                z-index: 10;
+                left: 0;
+                top: 0;
+                ion-icon {
+                    padding    : 10px;
+                    font-weight: bold;
+                    margin-top : 2px;
+                }
+            }
+
+        .stats {
+            font-size  : 20px;
+            text-align : center;
+            width      : 100%;
+            z-index: 0;
+        }
+
+        .theMisc {
+            height    : 30px;
+            width     : 100%;
+            display   : flex;
+            z-index   : 100 !important;
+            div{
+                width: 40%;
+                background: rgb(187, 187, 187);
+                text-align: center;
+                line-height: 30px;
+            }
+        }
+
+        .toScroll {
+            height    : calc(100% - 70px);
+            width     : 100%;
+            background: rgb(75,75,75);
+            overflow-y: scroll;
+            overflow-x: hidden;
+            box-shadow: inset 0 10px 5px rgba(0, 0, 0, 0.178);
+        }
+
+        .theCard {
+            width        : 100%;
+            height       : 48%;
+            min-height: 250px;
+            background   : white;
+            box-shadow   : 0 5px 10px rgba(0, 0, 0, 0.295);
+            border-radius: 10px;
+            overflow     : hidden;
+            margin-bottom: 15px;
+        }
+
+        .chart {
+            height: calc(100% - 50px);
+        }
+
+
+        ::-webkit-scrollbar-track {
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3) !important;
+            border-radius     : 10px !important;
+            background-color  : #F5F5F5 !important;
+        }
+
+        ::-webkit-scrollbar {
+            width           : 1px !important;
+            background-color: #F5F5F5 !important;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius     : 10px !important;
+            -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3) !important;
+            background-color  : rgb(255, 196, 0) !important;
+        }
+    }
+}

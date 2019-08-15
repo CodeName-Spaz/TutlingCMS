@@ -1,0 +1,78 @@
+<ion-content>
+  <ion-fab top left>
+    <button ion-fab (click)="goBack()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+  </ion-fab>
+  <div class="big-screen" padding>
+    <div class="titler">
+      <h1>Insights</h1>
+    </div>
+    <div class="body-content">
+      <div class="numbers">
+        <div padding>
+          <h3>Students</h3>
+          <!-- insert chart here -->
+          <div class="chart"></div>
+        </div>
+        <div padding>
+          <h3>Tutors</h3>
+          <!-- insert chart here -->
+          <div class="chart"></div>
+        </div>
+      </div>
+      <div class="misc">
+        <div>
+          <b>
+            <ion-icon name="person-add"></ion-icon>
+          </b> 300 Registered this month
+        </div>
+        <div>
+          <b id="total">
+            <ion-icon name="people"></ion-icon>
+          </b> 30000 Total users</div>
+        <div>
+          <b id="active">
+            <ion-icon name="person"></ion-icon>
+          </b> 28015 Currently Active</div>
+      </div>
+      <button ion-button (click)="goBack()">Close</button>
+    </div>
+  </div>
+  <div class="small-screen">
+    <div class="navBar">
+      <div id="back-button" (click)="goBack()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </div>
+      <div class="stats">
+        Insights
+      </div>
+    </div>
+    <div class="theMisc">
+      <div>
+          <b>
+            <ion-icon name="person-add"></ion-icon>
+          </b> 300</div>
+      <div>
+        <b id="total">
+          <ion-icon name="people"></ion-icon>
+        </b> 30000</div>
+      <div>
+        <b id="active">
+          <ion-icon name="person"></ion-icon>
+        </b> 28015</div>
+    </div>
+    <div class="toScroll" padding>
+      <div class="theCard">
+        <!-- add chart here -->
+        <div class="chart"></div>
+        <p>Students</p>
+      </div>
+      <div class="theCard">
+        <!-- add chart here -->
+        <div class="chart"></div>
+        <p>Tutors</p>
+      </div>
+    </div>
+  </div>
+</ion-content>
